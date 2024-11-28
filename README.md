@@ -17,7 +17,6 @@ A **Pesquisa de Boca de Urna** é uma aplicação web interativa que permite aos
 - **HTML5**: Estruturação do conteúdo da aplicação.
 - **CSS3**: Estilização da interface com foco em design responsivo.
 - **Chart.js**: Biblioteca para criação de gráficos dinâmicos.
-- **Local Storage**: Armazenamento dos votos dos usuários no navegador.
 
 ## Como Executar o Projeto
 
