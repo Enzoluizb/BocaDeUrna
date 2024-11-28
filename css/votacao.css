@@ -1,0 +1,54 @@
+.candidato img {
+  width: 14rem;
+  height: 14rem;
+  object-fit: cover;
+  border-radius: 0.6rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.candidatos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+main h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #003a63;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  letter-spacing: 0.08rem;
+}
+
+.candidato {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.candidato p {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #003a63;
+}
+
+button {
+  padding: 0.8rem 1.6rem;
+  border-radius: 0.4rem;
+  background-color: #003a63;
+  cursor: pointer;
+  transition: all 0.18s;
+  transition: all 0.18s;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.05rem;
+  text-decoration: none;
+  color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+button:hover {
+  background-color: #03497a;
+}

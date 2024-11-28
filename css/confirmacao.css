@@ -1,0 +1,38 @@
+main h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #003a63;
+}
+
+main p {
+  font-size: 1.1rem;
+}
+
+main {
+  justify-content: center;
+  gap: 4rem;
+}
+
+button {
+  padding: 0.8rem 1.6rem;
+  border-radius: 0.4rem;
+  background-color: #003a63;
+  cursor: pointer;
+  transition: all 0.18s;
+  transition: all 0.18s;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.05rem;
+
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+button:hover {
+  background-color: #03497a;
+}
+
+button a {
+  text-decoration: none;
+  color: white;
+}

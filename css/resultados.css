@@ -1,0 +1,16 @@
+main h2 {
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  color: #003a63;
+}
+main {
+  justify-content: center;
+  gap: 2rem;
+}
+
+#resultadosChart {
+  width: 50rem; /* Define a largura do canvas como 50% do elemento pai */
+  height: 500px; /* Define uma altura fixa */
+  max-width: 800px; /* Define um limite máximo de largura */
+  margin: 0 auto; /* Centraliza o canvas */
+}
