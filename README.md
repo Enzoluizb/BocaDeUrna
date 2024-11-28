@@ -23,4 +23,4 @@ A **Pesquisa de Boca de Urna** é uma aplicação web interativa que permite aos
 1. Clone este repositório:
 
    ```bash
-   git clone https://github.com/Enzoluizb/Pesquisa-de-Boca-de-Urna.git
+   git clone https://github.com/Enzoluizb/BocaDeUrna.git
