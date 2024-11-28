@@ -6,19 +6,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email = $_POST['email'];
     $idade = $_POST['idade'];
 
-    error_log("Recebi uma requisição POST com nome: $nome, email: $email, idade: $idade");
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $error = "Por favor, insira um e-mail válido.";
+    } elseif ($idade < 18) {
+        $error = "Você deve ter 18 anos ou mais para se cadastrar.";
+    } else {
+        try {
+            $stmt = $pdo->prepare("INSERT INTO usuarios (nome, email, idade) VALUES (:nome, :email, :idade)");
+            $stmt->execute(['nome' => $nome, 'email' => $email, 'idade' => $idade]);
 
-    try {
-        $stmt = $pdo->prepare("INSERT INTO usuarios (nome, email, idade) VALUES (:nome, :email, :idade)");
-        $stmt->execute(['nome' => $nome, 'email' => $email, 'idade' => $idade]);
+            error_log("Dados inseridos no banco com sucesso");
 
-        error_log("Dados inseridos no banco com sucesso");
-
-        header("Location: votacao.php");
-        exit;
-    } catch (PDOException $e) {
-        $error = "Erro ao cadastrar: " . $e->getMessage();
-        error_log($error); 
+            header("Location: votacao.php");
+            exit;
+        } catch (PDOException $e) {
+            $error = "Erro ao cadastrar: " . $e->getMessage();
+            error_log($error); 
+        }
     }
 }
 ?>
