@@ -9,8 +9,8 @@ main {
 }
 
 #resultadosChart {
-  width: 50rem; /* Define a largura do canvas como 50% do elemento pai */
-  height: 500px; /* Define uma altura fixa */
-  max-width: 800px; /* Define um limite máximo de largura */
-  margin: 0 auto; /* Centraliza o canvas */
+  width: 50rem;
+  height: 500px;
+  max-width: 800px;
+  margin: 0 auto;
 }
